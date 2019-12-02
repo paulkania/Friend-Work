@@ -1,0 +1,21 @@
+
+num=[2,4,6,2,7,22,8,5,7,8,9,22,4,55,2,4,1,11,4,1,2,3,3,4,2,4,6,7]
+# print(len(num))
+# print(num[2], num[2+1])
+ms=[]
+cs=[]
+for i in range(len(num)-1):
+    if num[i] <= num[i+1]:
+        cs.append(num[i])
+        # print(num[i],num[i+1])
+        # print()
+    if len(cs)>=len(ms):
+        ms=cs
+        # print(cs)
+        # print(ms)
+    if num[i] > num[i+1]:
+        cs.append(num[i])
+        cs=[]
+        # print('end')
+        # print()
+print('master list is', ms)
