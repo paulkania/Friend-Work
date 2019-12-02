@@ -1,3 +1,5 @@
+#found somewhere on stack overflow, finding it will be eazy.
+
 def Sequence(integers):
 
   longest_sequence = []
